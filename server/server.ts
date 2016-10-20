@@ -15,6 +15,6 @@ export class ServerApp {
    }
 
    private renderHelloWorld(req: express.Request, res: express.Response){
-       res.send("Hello World!")
+       res.send("Hello World!");
    }
 }
