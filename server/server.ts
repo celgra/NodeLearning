@@ -6,15 +6,15 @@ export class ServerApp {
        this.app = express();
    } 
 
-   public setRoutes(){
+   public setRoutes(): void{
        this.app.get('/', this.renderHelloWorld);
    }
 
-   public startServer(){
+   public startServer(): void{
        this.app.listen(5000, () => console.log("Example app listening on port 5000!"));
    }
 
-   private renderHelloWorld(req: express.Request, res: express.Response){
+   private renderHelloWorld(req: express.Request, res: express.Response): void{
        res.send("Hello World!");
    }
 }
